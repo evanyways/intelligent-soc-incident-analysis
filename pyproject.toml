@@ -1,0 +1,14 @@
+[project]
+name = "intelligent-soc-incident-analysis"
+version = "0.1.0"
+description = "Intelligent system for cybersecurity incident analysis in SOC environments"
+requires-python = ">=3.11"
+
+dependencies = [
+    # Dependencias que vayas necesitando
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
