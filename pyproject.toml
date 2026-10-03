@@ -1,14 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "intelligent-soc-incident-analysis"
 version = "0.1.0"
 description = "Intelligent system for cybersecurity incident analysis in SOC environments"
-requires-python = ">=3.11"
-
-dependencies = [
-    # Dependencias que vayas necesitando
+readme = "README.md"
+requires-python = ">=3.14"
+authors = [
+    { name = "Eva Rodríguez" }
 ]
+dependencies = []
 
 [project.optional-dependencies]
 dev = [
-    "pytest",
+    "pytest>=8.0",
 ]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
